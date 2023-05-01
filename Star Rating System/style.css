@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20.5rem;
+    height: 19rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(71, 139, 214);
+    background-image: linear-gradient(132.6deg, rgba(71, 139, 214, 1) 23.3%, rgba(37, 216, 211, 1) 84.7%);
+}
+
+h1.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+p.card-desc {
+    margin-top: 0;
+    color: #fffffb;
+    line-height: 1.5em;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+span.star {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    border-radius: 50%;
+    color: #009FFF;
+    background-color: #123597;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span.star.active {
+    color: #A0F6FF;
+}
+
+button.card-button {
+    cursor: pointer;
+    display: block;
+    margin-top: 1.5em;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    background-image: linear-gradient(to right, #000428 0%, #004e92 51%, #000428 100%);
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 100%;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+button.card-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

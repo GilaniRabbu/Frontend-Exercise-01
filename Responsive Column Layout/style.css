@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #7CFC00;
+    background: #364650;
+}
+
+.row {
+    font-family: cursive;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 0;
+}
+
+.column {
+    flex: 25%;
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.animation {
+    animation: left 1s 1 linear;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,20 @@
+html {
+    background: url(img/home-img.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container {
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #CEF434;
+}
+
+ul {
+    list-style: none;
+    text-align: justify;
+    display: grid;
+    place-content: center;
+}

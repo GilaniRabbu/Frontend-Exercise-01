@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background: slategray;
+}
+
+.social-media {
+    background-color: slategray;
+    margin: 10% 0;
+    padding: 5% 10%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    padding: 3% 6%;
+    font-size: 4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .social-media {
+        padding: 3% 5%;
+    }
+
+    .btn {
+        padding: 1.5% 3%;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .social-media {
+        padding: 2% 5%;
+    }
+
+    .btn {
+        padding: 1% 2%;
+        font-size: 1.5vw;
+    }
+}

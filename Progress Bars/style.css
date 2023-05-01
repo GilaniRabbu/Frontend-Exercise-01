@@ -1,0 +1,78 @@
+body {
+    background-color: Mediumseagreen;
+}
+
+.progress-container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #99ddff;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.emptybar {
+    width: 100%;
+    height: 10px;
+    background-color: #3fd2c7;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.emptybar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #3fd2c7 0%, #3fd2c7 25%, transparent 100%);
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.filledbar {
+    width: 100%;
+    height: 10px;
+    background-color: #00458B;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    background-color: #00458B;
+    color: #3fd2c7;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.val {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .progress-container {
+        width: 90%;
+    }
+}

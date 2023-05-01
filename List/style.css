@@ -1,0 +1,40 @@
+.container {
+    background-color: #36454F;
+    padding: 30px;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.container li {
+    font-size: 1.2rem;
+    color: #90EE90;
+}
+
+a {
+    color: #90EE90;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #90EE90;
+}
+
+a:hover {
+    color: #E6E6FA;
+}
+
+a:active {
+    color: #7DF9FF;
+}
+
+.container li::before {
+    content: '\f5ab';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 10px 10px 5px;
+    font-size: 2rem;
+    color: #7DF9FF;
+}

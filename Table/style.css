@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: lavender;
+}
+
+caption {
+    color: #5D3FD3;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table {
+    border: 2px dashed #36454F;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 2px dashed #36454F;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-text {
+    text-align: left;
+}
+
+th {
+    color: #36454F;
+    background-color: #7DF9FF;
+    height: 30px;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    color: #36454F;
+    background-color: lavender;
+}
+
+tr:nth-child(odd) {
+    color: #36454F;
+    background-color: #90EE90;
+}
+
+tr:hover {
+    color: #36454F;
+    background-color: #7DF9FF;
+}

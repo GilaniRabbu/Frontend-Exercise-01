@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Star Rating System</title>
+</head>
+<body>
+    <section class="container">
+        <div class="card card-rating">
+            <form class="card-rating-form">
+                <h1 class="card-title">Let us Know How Good our Project</h1>
+                <p class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum voluptates enim dolorum veritatis eum ratione non sed quae.
+                </p>
+                <div class="rating-stars">
+                    <span class="star active" data-num="1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <span class="star" data-num="2"><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <span class="star" data-num="3"><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <span class="star" data-num="4"><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <span class="star" data-num="5"><i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+                <input type="number" id="rating" name="rating" value="1" hidden>
+
+                <button class="card-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const stars = document.querySelectorAll(".star");
+        const rating = document.getElementById("rating");
+
+        console.log(stars);
+
+        stars.forEach((star) => {
+            star.addEventListener("click", () => {
+                const star_num = star.getAttribute("data-num");
+                rating.value = star_num;
+
+                stars.forEach((elem, position) => {
+                    if (position < star_num) {
+                        elem.classList.add("active");
+                    } else {
+                        elem.classList.remove("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

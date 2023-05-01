@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trade Winds', cursive;
+    background-color: #536A79;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2em;
+}
+
+.card {
+    background-color: #36454F;
+    color: #7CFC00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    margin: 1.2em;
+    padding: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    max-width: 100%;
+    margin-bottom: 1.2em;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+    border-left: 2px solid;
+    padding: 0.5em;
+    text-align: justify;
+}
+
+.icon a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #7CFC00;
+}
+
+.icon a:hover {
+    opacity: 0.8;
+}
