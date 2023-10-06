@@ -1,5 +1,5 @@
 const currentTime = () => {
-    const el = document.querySelector("h1");
+    const element = document.querySelector("h1");
 
     let date = new Date();
     let hh = date.getHours();
@@ -11,7 +11,7 @@ const currentTime = () => {
     ss = ss < 10 ? `0${ss}` : ss;
 
     let time = `${hh}:${mm}:${ss}`;
-    el.innerText = time;
+    element.innerText = time;
 }
 
 currentTime();
