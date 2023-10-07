@@ -1,33 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: Mediumseagreen;
+    background-color: #36454F;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .progress-container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
-    background-color: #99ddff;
+    background-color: #99DDFF;
     padding: 10px;
     border-radius: 3px;
     position: relative;
 }
 
-.emptybar {
+.empty-bar {
     width: 100%;
     height: 10px;
-    background-color: #3fd2c7;
-    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #3FD2C7;
+    border-radius: 3px;
     position: relative;
     overflow: hidden;
 }
 
-.emptybar:after {
+.empty-bar:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #3fd2c7 0%, #3fd2c7 25%, transparent 100%);
+    background-image: linear-gradient(to right, #3FD2C7 0%, #3FD2C7 25%, transparent 100%);
     animation: move 2s linear infinite;
 }
 
@@ -41,11 +59,11 @@ body {
     }
 }
 
-.filledbar {
+.filled-bar {
     width: 100%;
     height: 10px;
     background-color: #00458B;
-    border-radius: 5px;
+    border-radius: 3px;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,10 +71,12 @@ body {
 
 h1 {
     background-color: #00458B;
-    color: #3fd2c7;
+    color: #3FD2C7;
     padding: 10px;
     text-align: center;
+    font-size: 30px;
     font-family: cursive;
+    border-radius: 3px;
 }
 
 .skill-container {
