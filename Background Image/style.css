@@ -3,18 +3,43 @@ html {
     background-size: cover;
 }
 
+body {
+    margin: 0;
+    line-height: 1.25;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.2rem #222;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
-    font-family: cursive;
+    font-family: monospace;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #CEF434;
+    margin: 0 auto;
+    letter-spacing: 0.1rem;
+    color: #C4F20D;
 }
 
 ul {
+    padding: 0;
     list-style: none;
     text-align: justify;
     display: grid;
     place-content: center;
+}
+
+li {
+    font-size: 2rem;
+    -webkit-text-stroke: 0.1rem #222;
 }
