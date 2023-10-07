@@ -1,5 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: rgba(99, 251, 215, 1);
+    background: #36454F;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .progress-container {
@@ -12,12 +29,12 @@ body {
 
 .section-title {
     background-color: #0096FF;
-    padding: 5px 10px;
+    padding: 10px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 500;
-    font-family: 'Roboto';
+    font-family: cursive;
+    border-radius: 3px;
 }
 
 .progress-bar {
@@ -30,14 +47,9 @@ body {
 .empty-progress-bar {
     height: 10px;
     width: 100%;
+    margin-bottom: 10px;
     background-color: #D3D3D3;
     border-radius: 3px;
-}
-
-img {
-    width: 50px;
-    margin: 0 auto;
-    display: block;
 }
 
 .skill-container {
