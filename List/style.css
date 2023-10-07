@@ -1,5 +1,19 @@
-.container {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #36454F;
+}
+
+.container {
     padding: 30px;
 }
 
@@ -30,10 +44,11 @@ a:active {
 }
 
 .container li::before {
-    content: '\f5ab';
-    font-family: 'Font Awesome 5 Free';
+    content: "\f5ab";
+    font-family: "Font Awesome 6 Free";
     font-weight: bold;
     display: inline-block;
+    vertical-align: middle;
     margin: 10px 10px 10px 5px;
     font-size: 2rem;
     color: #7DF9FF;
