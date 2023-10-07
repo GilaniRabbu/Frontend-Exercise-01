@@ -1,19 +1,31 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     color: #7CFC00;
     background: #364650;
+}
+
+header {
+    margin-top: 2em;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2rem;
 }
 
 .row {
     font-family: cursive;
     display: flex;
     flex-wrap: wrap;
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
 .column {
