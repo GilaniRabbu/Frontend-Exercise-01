@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: radial-gradient(circle, #90EE90, #3CB371);
     background-size: 200% 200%;
@@ -21,10 +32,15 @@ body {
     }
 }
 
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
 .login-page {
     max-width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .form {
@@ -32,7 +48,7 @@ body {
     z-index: 1;
     background: #1C67D2;
     max-width: 360px;
-    margin: 0 auto 100px;
+    margin: 0 auto;
     padding: 45px;
     border-radius: 10px;
     text-align: center;
@@ -61,7 +77,6 @@ body {
     width: 100%;
     border: 0;
     padding: 15px;
-
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
@@ -76,6 +91,7 @@ body {
 }
 
 .form .message {
+    font-family: cursive;
     margin: 15px 0 0;
     color: #B4B1B2;
     font-size: 12px;
