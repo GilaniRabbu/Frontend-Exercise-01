@@ -1,63 +1,85 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-body {
+* {
     margin: 0;
-    font-family: 'Trade Winds', cursive;
+    padding: 0;
+}
+
+body {
+    font-family: "Trade Winds", cursive;
     background-color: #536A79;
 }
 
 .card-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 1.2em;
 }
 
 .card {
     background-color: #36454F;
-    color: #7CFC00;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 300px;
-    margin: 1.2em;
-    padding: 1.2em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 290px;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #F4F6F8;
+    border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
-    transform: translateY(-20px);
+.count {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0.2em;
+    font-size: 5rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4A5AA5;
+    background-color: #87CEEB;
 }
 
-.card img {
-    max-width: 100%;
-    margin-bottom: 1.2em;
+.flow-content>*+* {
+    margin-top: 0.5em;
 }
 
 .card h2 {
-    margin-top: 0;
+    color: #E8EE4E;
+    font-size: 1.5rem;
 }
 
 .card p {
-    margin-bottom: 0;
-    border-left: 2px solid;
+    color: #E6B205;
+    font-size: 0.9rem;
+    border-left: 2px solid #E6B205;
     padding: 0.5em;
     text-align: justify;
 }
 
+.card h3 {
+    color: #FEFFD4;
+    cursor: pointer;
+}
+
+.card h3:hover {
+    color: #E8EE4E;
+}
+
 .icon a {
-    font-size: 2rem;
     text-decoration: none;
-    color: #7CFC00;
+    font-size: 1.6rem;
+    color: #FEFFD4;
 }
 
 .icon a:hover {
-    opacity: 0.8;
+    color: #E8EE4E;
 }
