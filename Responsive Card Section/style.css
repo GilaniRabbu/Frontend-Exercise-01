@@ -12,6 +12,9 @@
 body {
     font-family: "Trade Winds", cursive;
     background-color: #536A79;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .card-section {
