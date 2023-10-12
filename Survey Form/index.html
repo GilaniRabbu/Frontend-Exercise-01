@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,11 @@
     <link rel="stylesheet" href="app/style.css">
     <title>Survey Form</title>
 </head>
+
 <body>
     <div class="form-container">
-
         <h1>Survey Form</h1>
-
         <form action="backend.php" class="form" method="post" role="form">
-
             <label for="first-name">First Name</label>
             <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
 
@@ -32,37 +31,44 @@
             <div class="radio">
                 <p>Choose Your Best CSS Framework 🔽</p>
                 <input type="radio" id="bootstrap" name="fav_language" value="Bootstrap">
-                <label for="bootstrap">Bootstrap</label><br>
+                <label for="bootstrap" id="radio">Bootstrap</label><br>
 
                 <input type="radio" id="tailwand" name="fav_language" value="Tailwand">
-                <label for="tailwand">Tailwand</label><br>
+                <label for="tailwand" id="radio">Tailwand</label><br>
 
                 <input type="radio" id="foundation" name="fav_language" value="Foundation">
-                <label for="foundation">Foundation</label>
+                <label for="foundation" id="radio">Foundation</label>
             </div>
 
-            <label for="lang">Select Programming Language</label>
-            <select name="lang" id="lang">
-                <option value="JavaScript">JavaScript</option>
-                <option value="Python">Python</option>
-                <option value="Go">Go</option>
-            </select>
+            <fieldset>
+                <legend>Choose Your Skills?</legend>
+                <label for="php"><input type="checkbox" id="php"> PHP </label><br>
+                <label for="java"><input type="checkbox" id="java"> JAVA </label><br>
+                <label for="javascript"><input type="checkbox" id="javascript"> JAVASCRIPT </label><br>
+                <label for="go"><input type="checkbox" id="go"> GO </label><br>
+                <label for="python"><input type="checkbox" id="python"> PYTHON </label><br>
+                <label for="c"><input type="checkbox" id="c"> C </label><br>
+                <label for="c+"><input type="checkbox" id="c+"> C+ </label><br>
+                <label for="c++"><input type="checkbox" id="c++"> C++ </label><br>
+                <label for="kotlin"><input type="checkbox" id="kotlin"> KOTLIN </label><br>
+                <label for="ruby"><input type="checkbox" id="ruby"> RUBY </label><br>
+                <label for="rust"><input type="checkbox" id="rust"> RUST </label>
+            </fieldset>
 
             <label for="subject">Write a Comment About Programming Language</label>
             <textarea name="subject" id="subject" placeholder="Write something . . ." required></textarea>
 
             <input type="checkbox" id="terms" name="terms">
-            <label for="terms">I Agree to the Terms and Conditions</label>
+            <label for="terms" id="term">I Agree to the Terms and Conditions</label>
             <br><br>
 
             <input type="reset" value="Reset" class="btn"><br><br>
             <input type="submit" value="Submit" class="btn">
         </form>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
     <script src="app/index.js"></script>
 </body>
+
 </html>
