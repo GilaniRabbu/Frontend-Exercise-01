@@ -1,60 +1,63 @@
-html {
-    font-size: 100%;
-    box-sizing: border-box;
+:root {
+    --clr-neutral-100: #60A3D9;
+    --clr-neutral-200: #75E6DA;
+    --clr-primary-100: #274472;
+    --clr-primary-200: #BFD7ED;
 }
 
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 2px solid var(--clr-primary-100);
+}
+
 *:focus-visible {
-    outline: 2px solid var(--main-clr);
+    outline: none;
 }
 
 ::placeholder {
-    color: var(--main-clr);
-    font-size: .8rem;
+    color: var(--clr-primary-100);
+    font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
-    opacity: .8;
+    opacity: 0.8;
 }
 
-:root {
-    --main-clr: #90EE90;
-    --bg-clr: #36454F;
-    --bg-main: #202020;
-    --border-clr: #90EE90;
-    --white: #FFFFFF;
+html {
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.3;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-main);
-    color: var(--white);
     font-size: 1rem;
     font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    background-color: var(--clr-neutral-100);
 }
 
 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
 }
 
 .form-container {
-    width: 80%;
+    width: 70%;
     margin: 3em auto;
     padding: 2em;
-    color: var(--main-clr);
-    background-color: var(--bg-clr);
+    color: var(--clr-primary-100);
+    background-color: var(--clr-primary-200);
     border-top: 15px solid;
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 input[type="text"],
@@ -64,49 +67,53 @@ input[type="number"],
 select,
 textarea {
     width: 100%;
-    padding: .8em;
-    margin-top: .35em;
+    padding: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
     margin-bottom: 1.5em;
-    color: var(--main-clr);
-    background-color: var(--bg-main);
-    border: 1px solid var(--border-clr);
-    border-radius: 5px;
+    color: var(--clr-primary-100);
+    background-color: var(--clr-primary-200);
+    border: 2px solid var(--clr-primary-100);
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
 
 .radio {
-    margin-bottom: 1.9em;
+    margin-bottom: 2em;
 }
 
 p {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"],
+#radio,
+#term {
     cursor: pointer;
 }
 
-select {
-    color: var(--main-clr);
-    background-color: var(--bg-main);
-    border: 1px solid var(--border-clr);
-    cursor: pointer;
-    letter-spacing: 2px;
+fieldset {
+    padding: 0.5em 1em 1em;
+    margin-bottom: 2em;
+    border-radius: 2px;
+    border-color: var(--clr-primary-100);
+}
+
+legend {
+    font-size: 1rem;
 }
 
 textarea {
-    min-height: 200px;
-    resize: vertical;
-}
-
-input[type="checkbox"] {
-    cursor: pointer;
+    min-height: 150px;
+    resize: none;
 }
 
 .btn {
-    color: var(--bg-clr);
-    background-color: var(--main-clr);
+    color: var(--clr-primary-200);
+    background-color: var(--clr-primary-100);
+    cursor: pointer;
     border: none;
     width: 100%;
     font-size: 1rem;
@@ -114,13 +121,18 @@ input[type="checkbox"] {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: .75em 1.5em;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 1em 0;
+    border-radius: 2px;
     transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-    color: var(--main-clr);
-    background-color: var(--bg-main);
+    color: var(--clr-primary-100);
+    background-color: var(--clr-neutral-200);
+}
+
+@media (max-width: 640px) {
+    .form-container {
+        width: 95%;
+    }
 }
