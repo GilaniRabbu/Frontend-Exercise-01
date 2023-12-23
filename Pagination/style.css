@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    background-color: #556677;
+}
+
+.title {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.title,
+.center {
+    text-align: center;
+    font-family: monospace;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: #FFF;
+    float: left;
+    margin: 0 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    border: 1px solid #FFF;
+}
+
+.pagination a.active {
+    color: #FFF;
+    background-color: #0096FF;
+    border: 1px solid #0096FF;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #FFF;
+}
