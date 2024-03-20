@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.6;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #F4F6F8;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #005E9B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2em;
+}
+
+.profile-name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
+}
+
+.profile-name::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: #5BCBF0;
+    margin: 0.7em auto 0.5em;
+    opacity: 0.35;
+}
+
+.profile-position {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    color: #5BCBF0;
+    margin-bottom: 2em;
+}
+
+.profile-body {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.profile-image {
+    max-width: 125px;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 125px;
+    margin: 0 auto;
+}
+
+.social-link {
+    color: #5BCBF0;
+    opacity: 0.5;
+    font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    opacity: 1;
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .profile-main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name {
+        margin-top: 0;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
+}
